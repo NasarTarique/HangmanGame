@@ -1,2 +1,3 @@
 # HangmanGame
-Hangman Using GUI
+Hangman with GUI .
+
