@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>bat.png</file>
+        <file>images.jfif</file>
+        <file>../../4237558-background-hd.jpg</file>
+    </qresource>
+</RCC>
