@@ -1,10 +1,11 @@
-#include "hangmangame.h"
+#include "hangaman.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    HangmanGame w;
+    HANGAMAN w;
+    w.setWindowTitle("Hangman");
     w.show();
 
     return a.exec();

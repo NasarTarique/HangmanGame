@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-09-10T20:47:12
+# Project created by QtCreator 2019-09-11T00:05:11
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = HangmanGame
+TARGET = HANGMAN_GAME
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,13 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        hangmangame.cpp
+        hangaman.cpp
 
 HEADERS += \
-        hangmangame.h
+        hangaman.h
 
 FORMS += \
-        hangmangame.ui
+        hangaman.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
