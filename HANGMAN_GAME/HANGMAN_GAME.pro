@@ -26,15 +26,21 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        hangaman.cpp
+        hangaman.cpp \
+        playgame.cpp
 
 HEADERS += \
-        hangaman.h
+        hangaman.h \
+        playgame.h
 
 FORMS += \
-        hangaman.ui
+        hangaman.ui \
+        playgame.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc
