@@ -1,12 +1,12 @@
 #include "playgame.h"
 #include "ui_playgame.h"
-
+#include<cstdlib>
 Playgame::Playgame(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Playgame)
 {
     ui->setupUi(this);
-
+    assign();
     begin();
     lvl();
 
@@ -42,6 +42,31 @@ Playgame::Playgame(QWidget *parent) :
 Playgame::~Playgame()
 {
     delete ui;
+}
+
+void Playgame::assign()
+{
+    words[0]="chocolate";
+    words[1]="honey";
+    words[2]="valley";
+    words[3]="mountain";
+    words[4]="assassin";
+    words[5]="serendipity";
+    words[6]="nostalgia";
+    words[7]="butter";
+    words[8]="icecream";
+    words[9]="popsicle";
+    words[10]="forest";
+    words[11]="window";
+    words[12]="petrichor";
+    words[13]="atmosphere";
+    words[14]="memories";
+    words[15]="climate";
+    words[16]="weather";
+    words[17]="mango";
+    words[18]="apple";
+    words[19]="cabbage";
+
 }
 void Playgame::lvl()
 {
@@ -91,7 +116,8 @@ void Playgame::check()
 }
 void Playgame::generate()
 {
-    str="chocolate";
+
+    str=words[rand()%20];
 
 
 }
@@ -111,7 +137,7 @@ void Playgame::begin()
 {
     generate();
     hit =0;
-    miss =6;
+    miss =9;
 
 
     for (int i=0;i<str.length();i++)

@@ -2,7 +2,9 @@
 #define PLAYGAME_H
 
 #include <QMainWindow>
-
+#include <stdlib.h>
+#include <string>
+#include <cstdlib>
 namespace Ui {
 class Playgame;
 }
@@ -15,6 +17,7 @@ public:
     explicit Playgame(QWidget *parent = nullptr);
     ~Playgame();
     QString str,hash;
+    QString words[20];
     QChar ch;
     int miss,hit,level;
     void begin();
@@ -23,7 +26,7 @@ public:
     void check();
     void res();
     void lvl();
-
+    void  assign();
 
 public slots:
     void A();
