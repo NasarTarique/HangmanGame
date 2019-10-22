@@ -1,3 +1,0 @@
-# HangmanGame
-Hangman with GUI .
-
